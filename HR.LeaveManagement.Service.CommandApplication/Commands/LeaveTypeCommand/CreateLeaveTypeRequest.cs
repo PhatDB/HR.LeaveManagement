@@ -1,4 +1,5 @@
 ﻿using HR.LeaveManagement.Service.CommandApplication.DTOs.LeaveType;
+using HR.LeaveManagement.Service.CommandApplication.Responses;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Service.CommandApplication.Commands.LeaveTypeCommand
 {
-    public class CreateLeaveTypeRequest : IRequest<int>
+    public class CreateLeaveTypeRequest : IRequest<BaseCommandResponse>
     {
         public CreateLeaveTypeDto LeaveTypeDto { get; set; }
     }

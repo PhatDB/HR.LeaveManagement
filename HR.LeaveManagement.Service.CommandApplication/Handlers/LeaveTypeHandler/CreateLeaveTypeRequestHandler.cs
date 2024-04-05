@@ -23,7 +23,7 @@ namespace HR.LeaveManagement.Service.CommandApplication.Handlers.LeaveTypeHandle
         }
         public async Task<int> Handle(CreateLeaveTypeRequest request, CancellationToken cancellationToken)
         {
-            var leaveType = _mapper.Map<LeaveType>(request.LeaveType);
+            var leaveType = _mapper.Map<LeaveType>(request.LeaveTypeDto);
             leaveType = await _leaveTypeRepository.Add(leaveType);
 
             return leaveType.Id;

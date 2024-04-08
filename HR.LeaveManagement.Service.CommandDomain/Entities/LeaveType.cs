@@ -9,7 +9,7 @@ namespace HR.LeaveManagement.Service.CommandDomain.Entities
 {
     public class LeaveType : BaseDomainEntity
     {
-        public string? Name { get; set; }
+        public string Name { get; set; }
         public int DefaulDays { get; set; }
 
     }

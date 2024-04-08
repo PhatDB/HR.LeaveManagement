@@ -1,8 +1,7 @@
 using HR.LeaveManagement.Service.CommandApplication;
 using HR.LeaveManagement.Service.CommandInfrastructure;
 using HR.LeaveManagement.Service.CommandPersistence;
-using HR.LeaveManagement.Service.CommandPersistence.Context;
-using Microsoft.Extensions.Configuration;
+using HR.LeaveManagement.Service.CommandPresentation.Endpoints.LeaveType;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +10,6 @@ builder.Services.ConfigureApplicationServices();
 builder.Services.ConfigureInfrastructureServices(builder.Configuration);
 builder.Services.ConfigurePresistenceServices(builder.Configuration);
 
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -35,11 +33,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
 app.UseCors("CorsPolicy");
-
-app.MapControllers();
-
+app.MapLeaveTypeEndpoints();
 app.Run();

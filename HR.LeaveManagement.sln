@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Service.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Service.CommandApplication", "HR.LeaveManagement.Service.CommandApplication\HR.LeaveManagement.Service.CommandApplication.csproj", "{82F8CA1F-FFB8-466D-AA76-F646ED6C2DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Service.CommandPersistence", "HR.LeaveManagement.Service.CommandPersistence\HR.LeaveManagement.Service.CommandPersistence.csproj", "{EBBB8C43-560A-40BE-848A-AD50079D7AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Service.CommandPersistence", "HR.LeaveManagement.Service.CommandPersistence\HR.LeaveManagement.Service.CommandPersistence.csproj", "{EBBB8C43-560A-40BE-848A-AD50079D7AC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Service.CommandInfrastructure", "HR.LeaveManagement.Service.CommandInfrastructure\HR.LeaveManagement.Service.CommandInfrastructure.csproj", "{A6886D79-26CC-4BA2-9B8C-EAD29EA33211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Service.CommandInfrastructure", "HR.LeaveManagement.Service.CommandInfrastructure\HR.LeaveManagement.Service.CommandInfrastructure.csproj", "{A6886D79-26CC-4BA2-9B8C-EAD29EA33211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Service.CommandAPI", "HR.LeaveManagement.Service.CommandAPI\HR.LeaveManagement.Service.CommandAPI.csproj", "{018F5200-DBBC-4C6A-82CF-7255A9C31A54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Service.CommandAPI", "HR.LeaveManagement.Service.CommandAPI\HR.LeaveManagement.Service.CommandAPI.csproj", "{BD0D5AF4-739E-4722-882E-ECA0826A5668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Service.CommandPresentation", "HR.LeaveManagement.Service.CommandPresentation\HR.LeaveManagement.Service.CommandPresentation.csproj", "{F0787511-3BCA-4B0E-A270-70B262D9EECC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +49,14 @@ Global
 		{A6886D79-26CC-4BA2-9B8C-EAD29EA33211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6886D79-26CC-4BA2-9B8C-EAD29EA33211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6886D79-26CC-4BA2-9B8C-EAD29EA33211}.Release|Any CPU.Build.0 = Release|Any CPU
-		{018F5200-DBBC-4C6A-82CF-7255A9C31A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{018F5200-DBBC-4C6A-82CF-7255A9C31A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{018F5200-DBBC-4C6A-82CF-7255A9C31A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{018F5200-DBBC-4C6A-82CF-7255A9C31A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0D5AF4-739E-4722-882E-ECA0826A5668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0D5AF4-739E-4722-882E-ECA0826A5668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0D5AF4-739E-4722-882E-ECA0826A5668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0D5AF4-739E-4722-882E-ECA0826A5668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0787511-3BCA-4B0E-A270-70B262D9EECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0787511-3BCA-4B0E-A270-70B262D9EECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0787511-3BCA-4B0E-A270-70B262D9EECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0787511-3BCA-4B0E-A270-70B262D9EECC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,7 +70,8 @@ Global
 		{82F8CA1F-FFB8-466D-AA76-F646ED6C2DC7} = {BA19D424-D736-4A30-BB2F-69D2C200A6C1}
 		{EBBB8C43-560A-40BE-848A-AD50079D7AC7} = {BA19D424-D736-4A30-BB2F-69D2C200A6C1}
 		{A6886D79-26CC-4BA2-9B8C-EAD29EA33211} = {BA19D424-D736-4A30-BB2F-69D2C200A6C1}
-		{018F5200-DBBC-4C6A-82CF-7255A9C31A54} = {BA19D424-D736-4A30-BB2F-69D2C200A6C1}
+		{BD0D5AF4-739E-4722-882E-ECA0826A5668} = {BA19D424-D736-4A30-BB2F-69D2C200A6C1}
+		{F0787511-3BCA-4B0E-A270-70B262D9EECC} = {BA19D424-D736-4A30-BB2F-69D2C200A6C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AEA9B13-4BBF-4B5E-80A5-3666ED7535C8}

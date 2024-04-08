@@ -30,6 +30,16 @@ namespace HR.LeaveManagement.Service.CommandPersistence.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task Delete(int id)
+        {
+            var result = _dbContext.LeaveTypes.SingleOrDefault(b => b.Id == id);
+            if (result != null)
+            {
+                _dbContext.LeaveTypes.Remove(result);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
         public async Task<bool> Exists(int id)
         {
             var entity = await Get(id);

@@ -36,13 +36,16 @@ namespace HR.LeaveManagement.Service.CommandApplication.Handlers.LeaveTypeHandle
                 response.Message = "Creation Failed";
                 response.Errors = validationResult.Errors.Select(q => q.ErrorMessage).ToList();
             }
+            else
+            {
+                var leaveType = _mapper.Map<LeaveType>(request.LeaveTypeDto);
 
-            var leaveType = _mapper.Map<LeaveType>(request.LeaveTypeDto);
-            leaveType = await _leaveTypeRepository.Add(leaveType);
+                leaveType = await _leaveTypeRepository.Add(leaveType);
 
-            response.Success = true;
-            response.Message = "Creation Successful";
-            response.Id = leaveType.Id;
+                response.Success = true;
+                response.Message = "Creation Successful";
+                response.Id = leaveType.Id;
+            }
 
             return response;
         }

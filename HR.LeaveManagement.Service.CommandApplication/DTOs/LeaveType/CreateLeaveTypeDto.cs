@@ -8,7 +8,7 @@ namespace HR.LeaveManagement.Service.CommandApplication.DTOs.LeaveType
 {
     public class CreateLeaveTypeDto : ILeaveTypeDto
     {
-        public string? Name { get; set; }
+        public string Name { get; set; }
         public int DefaulDays { get; set; }
     }
 }
